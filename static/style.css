@@ -1,13 +1,15 @@
+/*both*/
 body {
-    background-image: url('background4.jpg');
-}
-header{
-    background-color: rgb(0, 0, 0);
+    background-color:#FFE8A3;
+    /*background-image: url('background4.jpg');*/
 
+}
+/*header{
+    background-color: rgb(0, 0, 0);
 }
 head{
     background-color: rgb(143, 143, 143);
-}
+}*/
 img {
     width: 100%; 
     padding: 2%; 
@@ -26,18 +28,18 @@ img:hover{
 h1{
     font-size:70px;
     font-family:monospace;
-    color:antiquewhite;
+    color:black;
     text-align: center;
 }
 h2{
     font-size:50px;
-    color:antiquewhite;
+    color:black;
     text-align: center;
 
 }
 h4 {
     font-size:26px;
-    color:antiquewhite;
+    color:black;
     text-align: center;
 }
 p {
@@ -47,12 +49,11 @@ p {
 dt {
     font-size:26px;
 }
-
-
-/*IDs*/
 #naav{
     font-size:30px;
+
 }
+
 /*
 #but1{
     color: antiquewhite;
@@ -69,65 +70,25 @@ dt {
     border-style: solid;
 }*/
 
-#info {
-    color:antiquewhite;
-    text-align:center;
-    bottom:0;
-    font-size: 24px;
-}
-#carou{
-    color:antiquewhite;
-}
-#colout{
-    color:antiquewhite;
-    text-align:center;
-    font-size:30px;
-}
-#titel{
-    font-size:50px;
-}
-#div1{
-    float:left;
-}
-#div2{
-    float:right;
-    top:0
-}
+
+
+/*Aufbau*/
 
 
 /*classes*/
-.tiitel{
-    font-size:40px;
-    color:antiquewhite;
-    text-align: center;
-
-}
-.tiiteel{
-    font-size:26px;
-    color:antiquewhite;
-    text-align: center;
-}
 .col{
-    color:antiquewhite;
+    color:black;
     font-size: 10px;
     opacity:0.6;
 }
-.titelb{
-    color:antiquewhite;
-    font-size:70px;
-}
-.carousel-inner{
-    width:2000px; 
-    max-width: 100%;
-}
 .colo{
-    color:antiquewhite;
+    color:black;
 }
 .colore{
-    color:antiquewhite;
+    color:black;
 }
 .colore2{
-    color:antiquewhite;
+    color:black;
 }
 .beschriftung {
     text-align:left;
@@ -149,4 +110,73 @@ dt {
     padding: 2%; 
     max-width: 100%;
     height:100%;
+}
+
+
+/*IDs*/
+#info {
+    color:black;
+    text-align:center;
+    bottom:0;
+    font-size: 24px;
+}
+
+#titel{
+    font-size:50px;
+}
+#div1{
+    float:left;
+}
+#div2{
+    float:right;
+    top:0
+}
+
+
+
+/*Aufbau 2*/
+
+
+/*classes*/
+.bodyy{
+    background-color: black;
+}
+.tiitel{
+    font-size:50px;
+    color:antiquewhite;
+    text-align: center;
+
+}
+.tiiteel{
+    font-size:26px;
+    color:antiquewhite;
+    text-align: center;
+}
+.titelb{
+    font-size:70px;
+    font-family:monospace;
+    color:white;
+    text-align: center;
+}
+.infoo {
+    color:antiquewhite;
+    text-align:center;
+    bottom:0;
+    font-size: 24px;
+}
+.carousel-inner{
+    width:2000px; 
+    max-width: 100%;
+}
+
+
+
+/*IDs*/
+#carou{
+    color:antiquewhite;
+}
+#colout{
+    color:antiquewhite;
+    text-align:center;
+    font-size:30px;
 }
