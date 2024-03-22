@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -16,9 +17,9 @@
 
     <h2 class="tiitel"><i>Welcome to my Website</i></h2>
     <h4 class="tiiteel"><i>This website is a personal recommendation for Series/Movies</i></h4>
-    <p id="info"><strong><i>Info:<br></i></strong>You can click on the Pictures/Gifs<br> to see, where
+    <p class="infoo"><strong><i>Info:<br></i></strong>You can click on the Pictures/Gifs<br> to see, where
         you can stream it</p>
-    <ul class="nav nav-pills nav-fill" id="naav">
+    <!--<ul class="nav nav-pills nav-fill" id="naav">
         <li class="nav-item">
             <button class="nav-link" onclick="showContent('myCarousel')">Movies</button>
         </li>
@@ -31,12 +32,22 @@
         <li class="nav-item">
             <button class="nav-link" onclick="window.location.href='/goback'" >Go Back</a>
         </li>
-    </ul>
+    </ul>-->
+    <div class="content">
+        <button id="menu-toggle2" class="btn">
+            <i class="bi bi-list"></i>
+        </button>
+    </div>
 </head>
 
 
-<body>
-
+<body class="bodyy">
+    <div id="sidebar2">
+        <a href="#" onclick="showContent('myCarousel')"><i class="bi bi-camera-reels"></i> Movies</a>
+        <a href="#" onclick="showContent('myCarousel2')"><i class="bi bi-tv"></i> Series</a>
+        <a href="#" onClick="history.go(0);"><i class="bi bi-arrow-repeat"></i> Both</a>
+        <a href="#" onclick="window.location.href='/goback'" ><i class="bi bi-arrow-bar-left"></i> Go Back</a>
+    </div>
     <!--<button id="but7" onClick="history.go(0);">Both</button>-->
     <!--<button onclick="window.location.href='/goback'" id="but4">Go Back</button>-->
     <div class="container" id="car">
@@ -108,7 +119,7 @@
                 <div class="item">
                     <h3 id="colout"><i>Dune</i></h3>
                     <a href="#" onclick="openPopup('https://www.justwatch.com/de/Film/Dune-2020')">
-                        <img src="{{ url_for('static', filename='dune2.jpg') }}" title="Dune"></a>
+                        <img src="{{ url_for('static', filename='duneee.gif') }}" title="Dune"></a>
                     <p id="carou" class="beschriftung"><i><strong>Popular actors:</strong> <br> Timothée Chalamet(Paul
                             Atreides),<br>Zendaya(Chani),<br>Oscar Isaac(Duko Leto Atreides),<br>Jason Momoa(Duncan
                             Idaho),<br>Dave Bautista(Glossu Rabban Harkonner)</i></p>
@@ -240,6 +251,28 @@
             }
             document.getElementById(myCarousel2).style.display = 'block';
         }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('menu-toggle2').addEventListener('click', function () {
+            const sidebar = document.getElementById('sidebar2');
+            const content = document.querySelector('.content');
+            const menuToggle = document.getElementById('menu-toggle2');
+
+            if (sidebar.style.left === '-250px') {
+                sidebar.style.left = '0';
+                content.style.marginLeft = '250px';
+
+                // Change to ❌ when sidebar is open
+                menuToggle.innerHTML = '<i class="bi bi-x"></i>';
+            } else {
+                sidebar.style.left = '-250px';
+                content.style.marginLeft = '0';
+
+                // Change back to ☰ when sidebar is closed
+                menuToggle.innerHTML = '<i class="bi bi-list"></i>';
+            }
+        });
     </script>
 </body>
 
