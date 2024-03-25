@@ -53,6 +53,10 @@ def dark():
 @app.route('/dune')
 def dune():
     return render_template('dune.html.jinja')
+    
+@app.route('/miles')
+def miles():
+    return render_template('miles.html.jinja')
 
 if __name__ == '__main__':
     app.run(debug=True)
