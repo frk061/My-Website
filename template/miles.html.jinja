@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Spider-Man: Across the Spider-Verse</title>
+<header>
+    <h1 style="color:antiquewhite">Spider-Man: Across the Spider-Verse</h1>
+</header>
+
+<head>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body class="ebody">
+    <button id="goback" onclick="goBack()">Go Back</button>
+    <div class="matrix">
+        <img id="extra" src="{{ url_for('static', filename='spiderc.jpg') }}">
+        <iframe src="https://www.youtube.com/embed/shW9i6k8cB0?si=IOAH_dIib4cfrn4A" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen width="1220" height="585"></iframe>
+
+    </div>
+    <div>
+        <p class="stream">You can stream it on:</p>
+        <a href="https://www.netflix.com/de-en/"><img id="netflix"
+                src="{{ url_for('static', filename='netflix.jpg') }}"></a>
+        <p class="rating">Rating:<br>8,6/10 from IMDb</p>
+        <p id="actors">Popular voices:</p>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='shameik.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Shameik Moore(Miles Morales)</figcaption>
+        </figure>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='hailee.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Hailee Steinfeld(Gwen Stacy)</figcaption>
+        </figure>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='isaac.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Oscar Isaac(Miguel O'Hara)</figcaption>
+        </figure>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='kaluuya.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Daniel Kaluuya(Hobie Brown)</figcaption>
+        </figure>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='mahershala.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Mahershala Ali(Uncle Aaron)</figcaption>
+        </figure>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='lauren.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Luna Lauren Vélez(Rio Morales)</figcaption>
+        </figure>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>
