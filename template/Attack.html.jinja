@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Attack on Titan</title>
+<header>
+    <h1 style="color:antiquewhite">Attack on Titan</h1>
+</header>
+
+<head>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body class="ebody">
+    <button id="goback" onclick="goBack()">Go Back</button>
+    <div class="matrix">
+        <img id="extra" src="{{ url_for('static', filename='attackon.jpeg') }}">
+        <iframe src="https://www.youtube.com/embed/MGRm4IzK1SQ?si=0ofx08ocOp72sL08" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen width="1220" height="585"></iframe>
+        
+    </div>
+    <div>
+        <p class="stream">You can stream it on:</p>
+        <a href="https://www.crunchyroll.com/"><img id="netflix" src="{{ url_for('static', filename='crunchyroll.jpg') }}"></a>
+        <p class="rating">Rating:<br>9,1/10 from IMDb</p>
+    </div>
+    <script>
+    function goBack() {
+        window.history.back();
+    }
+    </script>
+</body>
+</html>

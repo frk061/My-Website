@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Matrix</title>
+<title>Interstellar</title>
 <header>
-    <h1 style="color:antiquewhite">Matrix</h1>
+    <h1 style="color:antiquewhite">Interstellar</h1>
 </header>
 
 <head>
@@ -16,8 +16,8 @@
 <body class="ebody">
     <button id="goback" onclick="goBack()">Go Back</button>
     <div class="matrix">
-        <img id="extra" src="{{ url_for('static', filename='matrixcv.jpg') }}">
-        <iframe src="https://www.youtube.com/embed/vKQi3bBA1y8?si=vYhNXzkenpcTrR6g" title="YouTube video player" 
+        <img id="extra" src="{{ url_for('static', filename='interstellarc.jpg') }}">
+        <iframe src="https://www.youtube.com/embed/zSWdZVtXT7E?si=naq1E688uV62yZKF" title="YouTube video player" 
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen width="1220" height="585"></iframe>
         
@@ -25,27 +25,30 @@
     <div>
         <p class="stream">You can stream it on:</p>
         <a href="https://www.netflix.com/de-en/"><img id="netflix" src="{{ url_for('static', filename='netflix.jpg') }}"></a>
+        <a href="https://app.primevideo.com/home"><img id="prime" src="{{ url_for('static', filename='prime.jpg') }}"></a>
         <p class="rating">Rating:<br>8,7/10 from IMDb</p>
-        <!--<p class="cast" style="color:antiquewhite;">Popular cast:<br>Keanu Reeves(Neo), Laurence Fishburne(Morpheus), Carrie-Anne Moss(Trinity)</p>-->
-        <p id="actors">Popular actors:</p>
         <figure class="item">
-            <img src="{{ url_for('static', filename='keanu.jpg')}}">
-            <figcaption class="caption" style="color:antiquewhite;">Keanu Reeves(Neo)</figcaption>
+            <img class="morph" src="{{ url_for('static', filename='matthew.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Matthew McConaughey(Cooper)</figcaption>
         </figure>
         <figure class="item">
-            <img class="morph" src="{{ url_for('static', filename='morpheus.jpg')}}">
-            <figcaption class="caption" style="color:antiquewhite;">Laurence Fishburne(Morpheus)</figcaption>
+            <img class="morph" src="{{ url_for('static', filename='matt.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Matt Damon(Dr. Mann)</figcaption>
         </figure>
         <figure class="item">
-            <img class="morph" src="{{ url_for('static', filename='trinity.jpg')}}">
-            <figcaption class="caption" style="color:antiquewhite;">Carrie-Anne Moss(Trinity)</figcaption>
+            <img class="morph" src="{{ url_for('static', filename='anne.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Anne Hathaway(Dr. Amelia Brand)</figcaption>
+        </figure>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='timo.png')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Timothée Chalamet(Tom)</figcaption>
         </figure>
     </div>
-    
     <script>
     function goBack() {
         window.history.back();
     }
     </script>
+
 </body>
 </html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Peaky Blinders</title>
+<header>
+    <h1 style="color:antiquewhite">Peaky Blinders</h1>
+</header>
+
+<head>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body class="ebody">
+    <button id="goback" onclick="goBack()">Go Back</button>
+    <div class="matrix">
+        <img id="extra" src="{{ url_for('static', filename='peakyblinder.jpg') }}">
+        <iframe src="https://www.youtube.com/embed/JwXfVGjSz-4?si=eCjD1wwfkBz1Yc8C" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen width="1220" height="585"></iframe>
+        
+    </div>
+    <div>
+        <p class="stream">You can stream it on:</p>
+        <a href="https://www.netflix.com/de-en/"><img id="netflix" src="{{ url_for('static', filename='netflix.jpg') }}"></a>
+        <p class="rating">Rating:<br>8,8/10 from IMDb</p>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='cillian.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Cillian Murphy(Tommy Shelby)</figcaption>
+        </figure>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='hellen.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Hellen Mcrory(Polly Grey)</figcaption>
+        </figure>
+    </div>
+    <script>
+    function goBack() {
+        window.history.back();
+    }
+    </script>
+</body>
+</html>

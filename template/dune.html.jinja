@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Dune</title>
+<header>
+    <h1 style="color:antiquewhite">Dune</h1>
+</header>
+
+<head>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body class="ebody">
+    <button id="goback" onclick="goBack()">Go Back</button>
+    <div class="matrix">
+        <img id="extra" src="{{ url_for('static', filename='dunec.jpg') }}">
+        <iframe src="https://www.youtube.com/embed/8g18jFHCLXk?si=gkaDALPAbgPOTv1l" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen width="1220" height="585"></iframe>
+        
+    </div>
+    <div>
+        <p class="stream">You can stream it on:</p>
+        <a href="https://www.netflix.com/de-en/"><img id="netflix" src="{{ url_for('static', filename='netflix.jpg') }}"></a>
+        <p class="rating">Rating:<br>8,9/10 from IMDb</p>
+        <p id="actors">Popular actors:</p>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='timo.png')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Timothée Chalamet(Paul Atreides)</figcaption>
+        </figure>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='zendaya.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Zendaya(Chani)</figcaption>
+        </figure>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='isaac.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Oscar Isaac(Duke Leto Atreides)</figcaption>
+        </figure>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='jason.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Jason Momoa(Duncan Idaho)</figcaption>
+        </figure>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='dave.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Dave Bautista(Glossu Rabban Harkonnen)</figcaption>
+        </figure>
+    </div>
+    <script>
+    function goBack() {
+        window.history.back();
+    }
+    </script>
+
+</body>
+</html>

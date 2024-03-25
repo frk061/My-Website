@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Death Note</title>
+<header>
+    <h1 style="color:antiquewhite">Death Note</h1>
+</header>
+
+<head>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body class="ebody">
+    <button id="goback" onclick="goBack()">Go Back</button>
+    <div class="matrix">
+        <img id="extra" src="{{ url_for('static', filename='deathnotee.jpg') }}">
+        <iframe src="https://www.youtube.com/embed/9BxbETVKSLk?si=234B09-A0FMeOClj" 
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen width="1220" height="585"></iframe>
+
+    </div>
+    <div>
+        <p class="stream"> You can't stream Death Note right now.<br>Go on
+            <a href="https://www.justwatch.com/de/Serie/Death-Note">this website</a>,
+            if you want to be<br>informed, when a platform streams it.
+        </p>
+        <p class="rating">Rating:<br>9,1/10 from IMDb</p>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

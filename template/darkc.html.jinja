@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Matrix</title>
+<title>The Dark Knight</title>
 <header>
-    <h1 style="color:antiquewhite">Matrix</h1>
+    <h1 style="color:antiquewhite">The Dark Knight</h1>
 </header>
 
 <head>
@@ -16,8 +16,8 @@
 <body class="ebody">
     <button id="goback" onclick="goBack()">Go Back</button>
     <div class="matrix">
-        <img id="extra" src="{{ url_for('static', filename='matrixcv.jpg') }}">
-        <iframe src="https://www.youtube.com/embed/vKQi3bBA1y8?si=vYhNXzkenpcTrR6g" title="YouTube video player" 
+        <img id="extra" src="{{ url_for('static', filename='darkc.jpg') }}">
+        <iframe src="https://www.youtube.com/embed/EXeTwQWrcwY?si=pig8FlX4na0k07-M" title="YouTube video player" 
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen width="1220" height="585"></iframe>
         
@@ -25,23 +25,25 @@
     <div>
         <p class="stream">You can stream it on:</p>
         <a href="https://www.netflix.com/de-en/"><img id="netflix" src="{{ url_for('static', filename='netflix.jpg') }}"></a>
-        <p class="rating">Rating:<br>8,7/10 from IMDb</p>
-        <!--<p class="cast" style="color:antiquewhite;">Popular cast:<br>Keanu Reeves(Neo), Laurence Fishburne(Morpheus), Carrie-Anne Moss(Trinity)</p>-->
+        <p class="rating">Rating:<br>9/10 from IMDb</p>
         <p id="actors">Popular actors:</p>
         <figure class="item">
-            <img src="{{ url_for('static', filename='keanu.jpg')}}">
-            <figcaption class="caption" style="color:antiquewhite;">Keanu Reeves(Neo)</figcaption>
+            <img class="morph" src="{{ url_for('static', filename='bat.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Christian Bale(Batman)</figcaption>
         </figure>
         <figure class="item">
-            <img class="morph" src="{{ url_for('static', filename='morpheus.jpg')}}">
-            <figcaption class="caption" style="color:antiquewhite;">Laurence Fishburne(Morpheus)</figcaption>
+            <img class="morph" src="{{ url_for('static', filename='joker.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Heath Ledger(Joker)</figcaption>
         </figure>
         <figure class="item">
-            <img class="morph" src="{{ url_for('static', filename='trinity.jpg')}}">
-            <figcaption class="caption" style="color:antiquewhite;">Carrie-Anne Moss(Trinity)</figcaption>
+            <img class="morph" src="{{ url_for('static', filename='morgan.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Morgan Freeman(Lucius Fox)</figcaption>
+        </figure>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='cillian.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Cillian Murphy(Scarecrow)</figcaption>
         </figure>
     </div>
-    
     <script>
     function goBack() {
         window.history.back();

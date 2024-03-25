@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Sherlock</title>
+<header>
+    <h1 style="color:antiquewhite">Sherlock</h1>
+</header>
+
+<head>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body class="ebody">
+    <button id="goback" onclick="goBack()">>Go Back</button>
+    <div class="matrix">
+        <img id="extra" src="{{ url_for('static', filename='sherlockk.jpg') }}">
+        <iframe src="https://www.youtube.com/embed/xK7S9mrFWL4?si=AFpQnWcITrwgE2Kr" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen width="1220" height="585"></iframe>
+        
+    </div>
+    <div>
+        <p class="stream">You can stream it on:</p>
+        <a href="https://app.primevideo.com/home"><img id="netflix" src="{{ url_for('static', filename='prime.jpg') }}"></a>
+        <p class="rating">Rating:<br>9,1/10 from IMDb</p>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='benedict.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Benedict Cumberbatch(Sherlock Holmes)</figcaption>
+        </figure>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='martin.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Martin Freeman(Dr. John Watson)</figcaption>
+        </figure>
+    </div>
+    <script>
+    function goBack() {
+        window.history.back();
+    }
+    </script>
+</body>
+</html>
