@@ -13,7 +13,7 @@ body {
     -ms-overflow-style: none;
 }
   
-  body {
+body {
     font: 1em/1.5 'Flow Block', sans-serif;
     color: hsl(0 10% 30%);
 }
@@ -34,16 +34,15 @@ img.beweg:hover{
     transform: translateY(-16px);
 }
 h1{
-    font-size:70px;
+    font-size:90px;
     font-family:monospace;
     color:black;
     text-align: center;
 }
 h2{
-    font-size:50px;
+    font-size:70px;
     color:black;
     text-align: center;
-
 }
 h4 {
     font-size:26px;
@@ -94,6 +93,11 @@ dt {
 
 
 /*classes*/
+.welcome{
+    font-size:50px;
+    color:black;
+    text-align: center;
+}
 .col{
     color:black;
     font-size: 10px;
@@ -134,15 +138,17 @@ dt {
 /*IDs*/
 #info {
     color:black;
-    text-align:center;
-    bottom:0;
+    text-align: center;
+    position:absolute;
+    top:40px;
+    right:30px;
     font-size: 24px;
 }
 
 #titel{
     font-size:50px;
 }
-
+/*
 #div1{
     float:left;
 }
@@ -150,7 +156,7 @@ dt {
     float:right;
     top:0
 }
-
+*/
 
 
 /*Aufbau 2*/
@@ -179,8 +185,10 @@ dt {
 }
 .infoo {
     color:antiquewhite;
-    text-align:center;
-    bottom:0;
+    text-align: center;
+    position:absolute;
+    top:40px;
+    right:30px;
     font-size: 24px;
 }
 .carousel-inner{
@@ -301,27 +309,62 @@ body {
     padding: 20px;
 }
 iframe{
+    max-width:100%;
     position:absolute;
-    top:220px;
+    top:280px;
 }
 #netflix{
-    width:90px;
-    height:80px;
+    width:100px;
+    height:100px;
     padding: 20px;
     position:absolute;
-    left:900px;
+    left:250px;
+    top:890px;
 }
 #goback{
     color: antiquewhite;
     background-color:black;
-    padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
     font-size: 36px;
-    margin: 4px 2px;
     cursor: pointer;
     position:absolute;
     top:40px;
     right:40px;
-    border-style: solid;
+}
+.stream{
+    float:left;
+    color: antiquewhite;
+}
+.ebody{
+    background-color: black;
+}
+.rating{
+    color:antiquewhite;
+}
+#prime{
+    width:100px;
+    height:100px;
+    padding: 20px;
+    position:absolute;
+    left:400px;
+    top:890px;
+}
+.cast{
+    text-align:center;
+}
+figure{
+    text-align: center;
+    display:inline-block;
+    margin-right: 20px;
+}
+figcaption{
+    text-align: center;
+}
+.morph{
+    width:128px;
+    height:160px;
+}
+#actors{
+    color:antiquewhite;
+    text-align: left;
 }
