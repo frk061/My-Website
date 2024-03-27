@@ -45,7 +45,7 @@ h2{
     text-align: center;
 }
 h4 {
-    font-size:26px;
+    font-size:30px;
     color:black;
     text-align: center;
 }
@@ -321,16 +321,15 @@ iframe{
     left:250px;
     top:890px;
 }
-#goback{
-    color: antiquewhite;
-    background-color:black;
-    text-align: center;
-    font-size: 36px;
-    cursor: pointer;
+#rtl{
+    width:170px;
+    height:110px;
+    padding: 20px;
     position:absolute;
-    top:40px;
-    right:40px;
+    left:250px;
+    top:890px;
 }
+
 .stream{
     float:left;
     color: antiquewhite;
@@ -367,4 +366,60 @@ figcaption{
 #actors{
     color:antiquewhite;
     text-align: left;
+}
+.cant{
+    float:left;
+    color: antiquewhite;
+}
+
+/*extra pages*/
+.container2 img {
+    width: 100%; 
+    padding: 2%; 
+    max-width: 100%;
+    height:100%;
+}
+#div3{
+    float:left;
+}
+#div4{
+    float:right;
+}
+.colore3{
+    color:antiquewhite;
+}
+dt{
+    text-align: center;
+}
+.gohome{
+    position:absolute;
+    color: antiquewhite;
+    background-color:black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 36px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position:absolute;
+    top:0px;
+    left:0px;
+    border-style: solid;
+    border-color:white;
+}
+#goback{
+    position:absolute;
+    color: antiquewhite;
+    background-color:black;
+    border-color:white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 36px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position:absolute;
+    top:0px;
+    right:0px;
+    border-style: solid;
 }
