@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Sherlock</title>
+<title>Avengers: Infinity War/Endgame</title>
 <header>
-    <h1 style="color:antiquewhite">Sherlock</h1>
+    <h1 style="color:antiquewhite">Avengers: Infinity War/Endgame</h1>
 </header>
 
 <head>
@@ -17,24 +17,56 @@
     <button id="goback" onclick="goBack()">Go Back</button>
     <a class="gohome" href="/" >Homepage</a>
     <div class="matrix">
-        <img id="extra" src="{{ url_for('static', filename='sherlockk.jpg') }}">
-        <iframe src="https://www.youtube.com/embed/xK7S9mrFWL4?si=AFpQnWcITrwgE2Kr" title="YouTube video player" 
+        <img id="extra" src="{{ url_for('static', filename='infinity.jpg') }}">
+        <iframe src="https://www.youtube.com/embed/6ZfuNTqbHE8?si=u4zbh-qqKL8vAfX3" title="YouTube video player" 
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen width="1220" height="585"></iframe>
         
     </div>
     <div>
         <p class="stream">You can stream it on:</p>
-        <a href="https://app.primevideo.com/home"><img id="netflix" src="{{ url_for('static', filename='prime.jpg') }}"></a>
-        <p class="rating">Rating:<br>9,1/10 from IMDb</p>
+        <a href="https://www.disneyplus.com/en-de"><img id="netflix" src="{{ url_for('static', filename='disney.jpg') }}"></a>
+        <p class="rating">Rating:<br>8,4/10 from IMDb</p>
         <p id="actors">Popular actors:</p>
         <figure class="item">
-            <img class="morph" src="{{ url_for('static', filename='benedict.jpg')}}">
-            <figcaption class="caption" style="color:antiquewhite;">Benedict Cumberbatch(Sherlock Holmes)</figcaption>
+            <img class="morph" src="{{ url_for('static', filename='iron.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Robert Downey Jr.(Tony Stark)</figcaption>
         </figure>
         <figure class="item">
-            <img class="morph" src="{{ url_for('static', filename='martin.jpg')}}">
-            <figcaption class="caption" style="color:antiquewhite;">Martin Freeman(Dr. John Watson)</figcaption>
+            <img class="morph" src="{{ url_for('static', filename='thor.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Chris Hemsworth(Thor)</figcaption>
+        </figure>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='hulk.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Mark Ruffalo(Bruce Banner)</figcaption>
+        </figure>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='captain.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Chris Evans(Steve Rogers)</figcaption>
+        </figure>
+         <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='widow.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Scarlett Johansson(Natasha Romanoff)</figcaption>
+        </figure>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='benedict.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Benedict Cumberbatch(Doctor Strange)</figcaption>
+        </figure>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='holland.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Tom Holland(Peter Parker)</figcaption>
+        </figure>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='panther.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Chadwick Boseman(T'Challa)</figcaption>
+        </figure>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='wanda.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Elizabeth Olsen(Wanda Maximoff)</figcaption>
+        </figure>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='loki.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Tom Hiddleston(Loki)</figcaption>
         </figure>
     </div>
     <div id="div3" class="container2">
@@ -65,9 +97,18 @@
                             src="{{ url_for('static', filename='aot.gif') }}" title="Attack on Titan" style="width:960px; height:470px;"></a>
                     <p><strong>Other Assessments:</strong><br>9,1/10 from IMDb</p>
 
+                <dt>Sherlock</dt>
+                <dd><a href="/sherlock" class="beweg"><img
+                            src="{{ url_for('static', filename='sherlock2.jpg') }}" style="width:960px; height:470px;"
+                            title="Sherlock"></a>
+                    <p class="beschriftung"><i><strong>Popular actors:</strong> <br> Benedict Cumberbatch(Sherlock
+                            Holmes),<br> Martin Freeman(Dr. John Watson)</i></p>
+                </dd>
+                <p><strong>Other Assessments:<br></strong>9,1/10 from IMDb</p>
+
                 <dt>Death Note</dt>
-                <dd><a href="/Note" class="beweg"><img src="{{ url_for('static', filename='deathnote.jpg') }}"
-                            title="Death Note" style="width:960px; height:470px;"></a></dd>
+                <dd><a href="/Note" class="beweg"><img
+                            src="{{ url_for('static', filename='deathnote.jpg') }}" title="Death Note" style="width:960px; height:470px;"></a></dd>
                 <p><strong>Other Assessments:</strong><br>8,9/10 from IMDb</p>
 
                 <dt>Dragon Ball Z/Super</dt>
@@ -130,7 +171,7 @@
                 </dd>
                 <p><strong>Other Assessments:</strong><br>8,8/10 from IMDb</p>
 
-                <dt>Spider-Man: Across the Spider-Verse</dt>
+                dt>Spider-Man: Across the Spider-Verse</dt>
                 <dd><a href="/miles" class="beweg">
                         <img src="{{ url_for('static', filename='spidey.gif') }}"
                             title="Spider-Man: Across the Spider-Verse" style="width:960px; height:470px;"></a>
@@ -140,19 +181,7 @@
                             Aaron),<br>Luna Lauren Valez(Rio Morales)</i></p>
                 </dd>
                 <p><strong>Other Assessments:</strong><br>8,6/10 from IMDb</p>
-
-                <dt>Avengers: Infinity War/Endgame</dt>
-                <dd><a href="/avengers" class="beweg">
-                        <img src="{{ url_for('static', filename='cube.gif') }}" title="Avengers: Infinity War/Endgame"
-                            style="width:960px; height:470px;"></a>
-                    <p class="beschriftung"><i><strong>Popular actors:</strong> <br> Robert Downey Jr.(Tony
-                            Stark),<br>Chris Hemsworth(Thor),
-                            <br>Mark Ruffalo(Bruce Banner),<br>Chris Evans(Steve Rogers),<br>Scarlett Johansson(Natasha
-                            Romanoff),<br>Benedict Cumberbatch(Doctor Strange),<br>Tom Holland(Peter Parker)
-                            ,<br>Chadwick Boseman(T'Challa),<br>Elizabeth Olsen(Wanda Maximoff),<br>Tom
-                            Hiddleston(Loki)</i></p>
-                </dd>
-                <p><strong>Other Assessments:</strong><br>8,4/10 from IMDb</p>
+                
                 <dt>Spider-Man: No Way Home</dt>
                 <dd><a href="/noway" class="beweg">
                         <img src="{{ url_for('static', filename='spider.gif') }}" title="Spider-Man: No Way Home"
@@ -174,5 +203,6 @@
         window.history.back();
     }
     </script>
+
 </body>
 </html>

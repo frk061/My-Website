@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Sherlock</title>
+<title>Dragon Ball</title>
 <header>
-    <h1 style="color:antiquewhite">Sherlock</h1>
+    <h1 style="color:antiquewhite">Dragon Ball Z/Super</h1>
 </header>
 
 <head>
@@ -17,25 +17,16 @@
     <button id="goback" onclick="goBack()">Go Back</button>
     <a class="gohome" href="/" >Homepage</a>
     <div class="matrix">
-        <img id="extra" src="{{ url_for('static', filename='sherlockk.jpg') }}">
-        <iframe src="https://www.youtube.com/embed/xK7S9mrFWL4?si=AFpQnWcITrwgE2Kr" title="YouTube video player" 
+        <img id="extra" src="{{ url_for('static', filename='dragonballc.jpg') }}">
+        <iframe src="https://www.youtube.com/embed/WiONylGn8Xw?si=2QqPvEofg6viWN9F" title="YouTube video player" 
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen width="1220" height="585"></iframe>
         
     </div>
     <div>
-        <p class="stream">You can stream it on:</p>
-        <a href="https://app.primevideo.com/home"><img id="netflix" src="{{ url_for('static', filename='prime.jpg') }}"></a>
-        <p class="rating">Rating:<br>9,1/10 from IMDb</p>
-        <p id="actors">Popular actors:</p>
-        <figure class="item">
-            <img class="morph" src="{{ url_for('static', filename='benedict.jpg')}}">
-            <figcaption class="caption" style="color:antiquewhite;">Benedict Cumberbatch(Sherlock Holmes)</figcaption>
-        </figure>
-        <figure class="item">
-            <img class="morph" src="{{ url_for('static', filename='martin.jpg')}}">
-            <figcaption class="caption" style="color:antiquewhite;">Martin Freeman(Dr. John Watson)</figcaption>
-        </figure>
+        <p class="stream">You can stream it on :</p>
+        <a href="https://www.crunchyroll.com/"><img id="netflix" src="{{ url_for('static', filename='crunchyroll.jpg') }}"></a>
+        <p class="rating">Rating:<br>8,8/10 from IMDb</p>
     </div>
     <div id="div3" class="container2">
         <h2 style="color:antiquewhite">Series</h2>
@@ -65,15 +56,19 @@
                             src="{{ url_for('static', filename='aot.gif') }}" title="Attack on Titan" style="width:960px; height:470px;"></a>
                     <p><strong>Other Assessments:</strong><br>9,1/10 from IMDb</p>
 
-                <dt>Death Note</dt>
-                <dd><a href="/Note" class="beweg"><img src="{{ url_for('static', filename='deathnote.jpg') }}"
-                            title="Death Note" style="width:960px; height:470px;"></a></dd>
-                <p><strong>Other Assessments:</strong><br>8,9/10 from IMDb</p>
+                <dt>Sherlock</dt>
+                <dd><a href="/sherlock" class="beweg"><img
+                            src="{{ url_for('static', filename='sherlock2.jpg') }}" style="width:960px; height:470px;"
+                            title="Sherlock"></a>
+                    <p class="beschriftung"><i><strong>Popular actors:</strong> <br> Benedict Cumberbatch(Sherlock
+                            Holmes),<br> Martin Freeman(Dr. John Watson)</i></p>
+                </dd>
+                <p><strong>Other Assessments:<br></strong>9,1/10 from IMDb</p>
 
-                <dt>Dragon Ball Z/Super</dt>
-                <dd><a href="/dragon" class="beweg"><img src="{{ url_for('static', filename='dragonball.gif') }}"
-                            title="Dragon Ball Z/Super" style="width:960px; height:470px;"></a></dd>
-                <p><strong>Other Assessments:</strong><br>8,8/10 from IMDb</p>
+                <dt>Death Note</dt>
+                <dd><a href="/Note" class="beweg"><img
+                            src="{{ url_for('static', filename='deathnote.jpg') }}" title="Death Note" style="width:960px; height:470px;"></a></dd>
+                <p><strong>Other Assessments:</strong><br>8,9/10 from IMDb</p>
             </dl>
         </div>
     </div>
