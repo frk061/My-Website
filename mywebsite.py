@@ -58,5 +58,17 @@ def dune():
 def miles():
     return render_template('miles.html.jinja')
 
+@app.route('/avengers')
+def avengers():
+    return render_template('avengers.html.jinja')
+
+@app.route('/noway')
+def noway():
+    return render_template('spider.html.jinja')
+
+@app.route('/dragon')
+def dragon():
+    return render_template('dragonball.html.jinja')
+
 if __name__ == '__main__':
     app.run(debug=True)
