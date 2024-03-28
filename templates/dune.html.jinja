@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Dune</title>
+<header>
+    <h1 style="color:antiquewhite">Dune</h1>
+</header>
+
+<head>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body class="ebody">
+    <a  class="goback" href="javascript:history.back()">Go Back</a>
+    <a class="gohome" href="/" >Homepage</a>
+    <div class="matrix">
+        <img id="extra" src="{{ url_for('static', filename='dunec.jpg') }}">
+        <iframe src="https://www.youtube.com/embed/8g18jFHCLXk?si=gkaDALPAbgPOTv1l" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen width="1220" height="585"></iframe>
+        
+    </div>
+    <div>
+        <p class="stream">You can stream it on:</p>
+        <a href="https://www.netflix.com/de-en/"><img id="netflix" src="{{ url_for('static', filename='netflix.jpg') }}"></a>
+        <p class="rating">Rating:<br>8,8/10 from IMDb</p>
+        <p id="actors">Popular actors:</p>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='timo.png')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Timothée Chalamet(Paul Atreides)</figcaption>
+        </figure>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='zendaya.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Zendaya(Chani)</figcaption>
+        </figure>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='isaac.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Oscar Isaac(Duke Leto Atreides)</figcaption>
+        </figure>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='jason.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Jason Momoa(Duncan Idaho)</figcaption>
+        </figure>
+        <figure class="item">
+            <img class="morph" src="{{ url_for('static', filename='dave.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Dave Bautista(Glossu Rabban Harkonnen)</figcaption>
+        </figure>
+    </div>
+    <div id="div3" class="container2">
+        <h2 style="color:antiquewhite">TV Shows</h2>
+        <div class="image-container2">
+            <dl class="colore3">
+                <dt>Peaky Blinders</dt>
+                <dd><a href="/peaky" class="beweg"><img
+                            src="{{ url_for('static', filename='peakyblinder.gif') }}" title="Peaky Blinders" style="width:960px; height:470px;"></a>
+                </dd>
+                <p><strong>Rating:</strong><br>8,8/10 from IMDb</p>
+                
+                <dt>When They See Us</dt>
+                <dd><a href="/When" class="beweg"><img
+                            src="{{ url_for('static', filename='whentheyseeus.jpg') }}" title="When They See Us"
+                            style="width:960px; height:470px;"></a>
+                </dd>
+                <p><strong>Rating:</strong><br>8,8/10 from IMDb</p>
+
+                <dt>Attack on Titan</dt>
+                <dd><a href="/Attack" class="beweg"><img
+                            src="{{ url_for('static', filename='aot.gif') }}" title="Attack on Titan" style="width:960px; height:470px;"></a>
+                </dd>
+                <p><strong>Rating:</strong><br>9,1/10 from IMDb</p>
+
+                <dt>Sherlock</dt>
+                <dd><a href="/sherlock" class="beweg"><img
+                            src="{{ url_for('static', filename='sherlock2.jpg') }}" style="width:960px; height:470px;"
+                            title="Sherlock"></a>
+                </dd>
+                <p><strong>Rating:</strong><br>9,1/10 from IMDb</p>
+
+                <dt>Death Note</dt>
+                <dd><a href="/Note" class="beweg"><img
+                            src="{{ url_for('static', filename='deathnote.jpg') }}" title="Death Note" style="width:960px; height:470px;"></a>
+                </dd>
+                <p><strong>Rating:</strong><br>8,9/10 from IMDb</p>
+
+                <dt>Dragon Ball Z/Super</dt>
+                <dd><a href="/dragon" class="beweg"><img src="{{ url_for('static', filename='dragonball.gif') }}"
+                            title="Dragon Ball Z/Super" style="width:960px; height:470px;"></a>
+                </dd>
+                <p><strong>Rating:</strong><br>8,8/10 from IMDb</p>
+            </dl>
+        </div>
+    </div>
+    <div id="div4" class="container">
+        <h2 style="color:antiquewhite">Movies</h2>
+        <div class="image-container">
+            <dl class="colore3">
+                <dt>Matrix</dt>
+                <dd><a href="/matrix" class="beweg"><img src="{{ url_for('static', filename='matrix.webp') }}"
+                            title="Matrix" style="width:960px; height:470px;"></a>
+                </dd>
+                <p><strong>Rating:<br></strong>8,7/10 from IMDb</p>
+
+
+                <dt>Interstellar</dt>
+                <dd><a href="/interstellar" class="beweg"><img
+                            src="{{ url_for('static', filename='interstellar.gif') }}" title="Interstellar"
+                            style="width:960px; height:470px;"></a>
+                </dd>
+                <p><strong>Rating:</strong><br>8,7/10 from IMDb</p>
+
+                <dt>Harry Potter</dt>
+                <dd><a href="/harry" class="beweg">
+                        <img src="{{ url_for('static', filename='harry potter.gif') }}" title="Harry Potter"
+                            style="width:960px; height:470px;"></a>
+                </dd>
+                <p><strong>Rating:<br></strong>8,1/10 from IMDb</p>
+
+                <dt>The Dark Knight</dt>
+                <dd><a href="/dark" class="beweg"><img src="{{ url_for('static', filename='joker.gif') }}"
+                            title="The Dark Knight" style="width:960px; height:470px;"></a>
+                </dd>
+                <p><strong>Rating:</strong><br>9/10 from IMDb</p>
+
+                <dt>Spider-Man: Across the Spider-Verse</dt>
+                <dd><a href="/miles" class="beweg">
+                        <img src="{{ url_for('static', filename='spidey.gif') }}"
+                            title="Spider-Man: Across the Spider-Verse" style="width:960px; height:470px;"></a>
+                </dd>
+                <p><strong>Rating:</strong><br>8,6/10 from IMDb</p>
+
+                <dt>Avengers: Infinity War/Endgame</dt>
+                <dd><a href="/avengers" class="beweg">
+                        <img src="{{ url_for('static', filename='cube.gif') }}" title="Avengers: Infinity War/Endgame"
+                            style="width:960px; height:470px;"></a>
+                </dd>
+                <p><strong>Rating:</strong><br>8,4/10 from IMDb</p>
+
+                <dt>Spider-Man: No Way Home</dt>
+                <dd><a href="/noway" class="beweg">
+                        <img src="{{ url_for('static', filename='spider.gif') }}" title="Spider-Man: No Way Home"
+                            style="width:960px; height:470px;"></a>
+                </dd>
+                <p><strong>Rating:</strong><br>8,2/10 from IMDb</p>
+            </dl>
+        </div>
+    </div>
+    <script>
+    function goBack() {
+        window.history.back();
+    }
+    </script>
+</body>
+</html>

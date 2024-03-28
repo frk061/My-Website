@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<title>Movies/TV Shows</title>
+<header>
+    <h1>Movies/TV Shows</h1>
+</header>
+
+<head>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<ul class="nav nav-pills nav-fill" id="naav">
+<li class="nav-item">
+<button class="nav-link" onclick="showContent('div1')">Movies</button>
+</li>
+<li class="nav-item">
+<button class="nav-link" onclick="showContent('div2')">Series</button>
+</li>
+<li class="nav-item">
+<button class="nav-link" onClick="history.go(0);">Both</button>
+</li>
+<li class="nav-item">
+<button onClick="switchToOtherPage()" 
+titel="Click this button to change the view">Change View</button>
+</li>
+</ul>-->
+    <div class="content">
+        <button id="menu-toggle" class="btn">
+            <i class="bi bi-list"></i>
+        </button>
+    </div>
+</head>
+
+<body>
+    <h2 class="welcome"><i>Welcome to my Website</i></h2>
+    <h4><i>This website is a personal recommendation for Series/Movies</i></h4>
+    <p id="info"><strong><i class="inf">Info:<br></i></strong>You can click on the Pictures/Gifs<br> To see more information about the movie/show</p>
+    <div id="sidebar">
+        <a href="#" onclick="showContent('div1')"><i class="bi bi-camera-reels"></i> Movies</a>
+        <a href="#" onclick="showContent('div2')"><i class="bi bi-tv"></i> TV Shows</a>
+        <a href="#" onClick="history.go(0);"><i class="bi bi-arrow-repeat"></i> Both</a>
+        <a href="#" onClick="switchToOtherPage()"><i class="bi bi-eye"></i> Change View</a>
+    </div>
+
+    <div id="div2" class="container">
+        <h2>TV Shows</h2>
+        <div class="image-container">
+            <dl class="colore2">
+                <dt>Peaky Blinders</dt>
+                <dd><a href="/peaky" class="beweg"><img
+                            src="{{ url_for('static', filename='peakyblinder.gif') }}" title="Peaky Blinders"></a>
+                </dd>
+                <p><strong>Rating:</strong><br>8,8/10 from IMDb</p>
+
+                <dt>When They See Us</dt>
+                <dd><a href="/When" class="beweg"><img
+                            src="{{ url_for('static', filename='whentheyseeus.jpg') }}" title="When They See Us"
+                            class="when"></a>
+                </dd>
+                <p><strong>Rating:</strong><br>8,8/10 from IMDb</p>
+
+                <dt>Attack on Titan</dt>
+                <dd><a href="/Attack" class="beweg"><img
+                            src="{{ url_for('static', filename='aot.gif') }}" title="Attack on Titan" class="when"></a>
+                    <p><strong>Rating:</strong><br>9,1/10 from IMDb</p>
+                <dt>Sherlock</dt>
+                <dd><a href="/sherlock" class="beweg"><img
+                            src="{{ url_for('static', filename='sherlock2.jpg') }}" class="Sherlock"
+                            title="Sherlock"></a>
+                </dd>
+                <p><strong>Rating:<br></strong>9,1/10 from IMDb</p>
+
+                <dt>Death Note</dt>
+                <dd><a href="/Note" class="beweg"><img
+                            src="{{ url_for('static', filename='deathnote.jpg') }}" title="Death Note"></a></dd>
+                <p><strong>Rating:</strong><br>8,9/10 from IMDb</p>
+
+                <dt>Dragon Ball Z/Super</dt>
+                <dd><a href="/dragon" class="beweg"><img
+                            src="{{ url_for('static', filename='dragonball.gif') }}" title="Dragon Ball Z/Super"></a></dd>
+                <p><strong>Rating:</strong><br>8,8/10 from IMDb</p>
+            </dl>
+        </div>
+    </div>
+    </div>
+    <div id="div1" class="container">
+        <h2>Movies</h2>
+        <div class="image-container">
+            <dl class="colore">
+                <dt>Matrix</dt>
+                <dd><a href="/matrix" class="beweg"><img
+                            src="{{ url_for('static', filename='matrix.webp') }}" title="Matrix"></a>
+                </dd>
+                <p><strong>Rating:<br></strong>8,7/10 from IMDb</p>
+
+                <dt>Interstellar</dt>
+                <dd><a href="/interstellar" class="beweg"><img
+                            src="{{ url_for('static', filename='interstellar.gif') }}" title="Interstellar"></a>
+                </dd>
+                <p><strong>Rating:</strong><br>8,7/10 from IMDb</p>
+
+                <dt>Harry Potter</dt>
+                <dd><a href="/harry" class="beweg">
+                        <img src="{{ url_for('static', filename='harry potter.gif') }}" title="Harry Potter"></a>
+                </dd>
+                <p><strong>Rating:<br></strong>8,1/10 from IMDb</p>
+
+                <dt>The Dark Knight</dt>
+                <dd><a href="/dark" class="beweg"><img
+                            src="{{ url_for('static', filename='joker.gif') }}" title="The Dark Knight"></a>
+                </dd>
+                <p><strong>Rating:</strong><br>9/10 from IMDb</p>
+
+                <dt>Dune</dt>
+                <dd><a href="/dune" class="beweg">
+                        <img src="{{ url_for('static', filename='dune.gif') }}" title="Dune"></a>
+                </dd>
+                <p><strong>Rating:</strong><br>8,8/10 from IMDb</p>
+
+                <dt>Spider-Man: Across the Spider-Verse</dt>
+                <dd><a href="/miles" class="beweg">
+                        <img src="{{ url_for('static', filename='spidey.gif') }}" title="Spider-Man: Across the Spider-Verse"></a>
+                </dd>
+                <p><strong>Rating:</strong><br>8,6/10 from IMDb</p>
+
+                <dt>Avengers: Infinity War/Endgame</dt>
+                <dd><a href="/avengers" class="beweg">
+                        <img src="{{ url_for('static', filename='cube.gif') }}" title="Avengers: Infinity War/Endgame"></a>
+                </dd>
+                <p><strong>Rating:</strong><br>8,4/10 from IMDb</p>
+                <dt>Spider-Man: No Way Home</dt>
+                <dd><a href="/noway" class="beweg">
+                        <img src="{{ url_for('static', filename='spider.gif') }}" title="Spider-Man: No Way Home"></a>
+                </dd>
+                <p><strong>Rating:</strong><br>8,2/10 from IMDb</p>
+            </dl>
+        </div>
+    </div>
+    <!--<p id="info"><strong><i>Info:<br></i></strong>You can click on the Pictures/Gifs<br> to see, where
+you can stream it</p>-->
+    <script>
+        function openPopup(url) {
+            var width = 800;
+            var height = 500;
+            var left = (window.innerWidth - width) / 2;
+            var top = (window.innerHeight - height) / 2;
+            var options = "width=" + width + ",height=" + height + ",top=" + top + ",left=" + left;
+            var popupWindow = window.open(url, "_blank", options);
+            popupWindow.focus();
+        }
+    </script>
+    <script>
+        function showContent(div1) {
+            var contents = document.getElementsByClassName('container');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = 'none';
+            }
+            document.getElementById(div1).style.display = 'block';
+        }
+    </script>
+    <script>
+        function showContent(div2) {
+            var contents = document.getElementsByClassName('container');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = 'none';
+            }
+            document.getElementById(div2).style.display = 'block';
+        }
+    </script>
+    <script>
+        function switchToOtherPage() {
+            window.location.href = "{{ url_for('other_page') }}";
+        }
+    </script>
+    <!--Sidebar-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const sidebar = document.getElementById('sidebar');
+            const content = document.querySelector('.content');
+            const menuToggle = document.getElementById('menu-toggle');
+
+            if (sidebar.style.left === '-250px') {
+                sidebar.style.left = '0';
+                content.style.marginLeft = '250px';
+
+                // Change to ❌ when sidebar is open
+                menuToggle.innerHTML = '<i class="bi bi-x"></i>';
+            } else {
+                sidebar.style.left = '-250px';
+                content.style.marginLeft = '0';
+
+                // Change back to ☰ when sidebar is closed
+                menuToggle.innerHTML = '<i class="bi bi-list"></i>';
+            }
+        });
+    </script>
+</body>
+
+</html>
