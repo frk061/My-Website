@@ -407,7 +407,7 @@ dt{
     border-style: solid;
     border-color:white;
 }
-#goback{
+.goback{
     position:absolute;
     color: antiquewhite;
     background-color:black;
@@ -422,4 +422,5 @@ dt{
     top:0px;
     right:0px;
     border-style: solid;
+    border-color:white;
 }
