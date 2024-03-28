@@ -70,5 +70,9 @@ def noway():
 def dragon():
     return render_template('dragonball.html.jinja')
 
+@app.route('/deadly')
+def deadly():
+    return render_template('deadly.html.jinja')
+
 if __name__ == '__main__':
     app.run(debug=True)
