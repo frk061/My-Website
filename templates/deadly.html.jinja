@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Spider-Man: No Way Home</title>
+<title>Deadly Class</title>
 <header>
-    <h1 style="color:antiquewhite">Spider-Man: No Way Home</h1>
+    <h1 style="color:antiquewhite">Deadly Class</h1>
 </header>
 
 <head>
@@ -17,53 +17,45 @@
     <a  class="goback" href="javascript:history.back()">Go Back</a>
     <a class="gohome" href="/" >Homepage</a>
     <div class="matrix">
-        <img id="extra" src="{{ url_for('static', filename='nowayc.jpg') }}">
-        <iframe src="https://www.youtube.com/embed/JfVOs4VSpmA?si=XaVJimK8iYxOimo4" title="YouTube video player" 
+        <img id="extra" src="{{ url_for('static', filename='deadlyc.jpg') }}">
+        <iframe src="https://www.youtube.com/embed/ktVKG1mTmGk?si=z-SU5GOhSJr0lUD1" title="YouTube video player" 
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen width="1220" height="585"></iframe>
         
     </div>
     <div>
-        <p class="stream">You can stream it on:</p>
-        <a href="https://www.disneyplus.com/en-de"><img id="netflix" src="{{ url_for('static', filename='disney.jpg') }}"></a>
-        <p class="rating">Rating:<br>8,2/10 from IMDb</p>
+        <p class="stream">You can stream it on :</p>
+        <a href="https://tv.apple.com/"><img id="netflix" src="{{ url_for('static', filename='apple.jpg') }}"></a>
+        <p class="rating">Rating:<br>8,8/10 from IMDb</p>
         <p id="actors">Popular actors:</p>
         <figure class="item">
-            <img class="morph" src="{{ url_for('static', filename='holland.jpg')}}">
-            <figcaption class="caption" style="color:antiquewhite;">Tom Holland(Peter Parker)</figcaption>
+            <img class="morph" src="{{ url_for('static', filename='wong.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Benedict Wond(Master Lin)</figcaption>
         </figure>
         <figure class="item">
-            <img class="morph" src="{{ url_for('static', filename='zendaya.jpg')}}">
-            <figcaption class="caption" style="color:antiquewhite;">Zendaya(MJ)</figcaption>
+            <img class="morph" src="{{ url_for('static', filename='wadsworth.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Benjamin Wadsworth(Marcus Lopez)</figcaption>
         </figure>
         <figure class="item">
-            <img class="morph" src="{{ url_for('static', filename='benedict.jpg')}}">
-            <figcaption class="caption" style="color:antiquewhite;">Benedict Cumberbatch(Doctor Strange)</figcaption>
+            <img class="morph" src="{{ url_for('static', filename='lana.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Lana Condor(Saya Kuroki)</figcaption>
         </figure>
         <figure class="item">
-            <img class="morph" src="{{ url_for('static', filename='jacob.jpg')}}">
-            <figcaption class="caption" style="color:antiquewhite;">Jacob Batalon(Ned Leeds)</figcaption>
-        </figure>
-         <figure class="item">
-            <img class="morph" src="{{ url_for('static', filename='jamie.jpg')}}">
-            <figcaption class="caption" style="color:antiquewhite;">Jamie Foxx(Max Dillon)</figcaption>
+            <img class="morph" src="{{ url_for('static', filename='maria.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">María Gabriela de Faría(Maria Salazar)</figcaption>
         </figure>
         <figure class="item">
-            <img class="morph" src="{{ url_for('static', filename='willem.jpg')}}">
-            <figcaption class="caption" style="color:antiquewhite;">Willem Dafoe(Norman Osborn)</figcaption>
+            <img class="morph" src="{{ url_for('static', filename='luke.jpg')}}">
+            <figcaption class="caption" style="color:antiquewhite;">Luke Tennie(Willie Lewis)</figcaption>
         </figure>
-        <figure class="item">
-            <img class="morph" src="{{ url_for('static', filename='alfred.jpg')}}">
-            <figcaption class="caption" style="color:antiquewhite;">Alfred Molina(Dr. Otto Octavius)</figcaption>
-        </figure>
-        <figure class="item">
-            <img class="morph" src="{{ url_for('static', filename='andrew.jpg')}}">
-            <figcaption class="caption" style="color:antiquewhite;">Andrew Garfield(Peter Parker)</figcaption>
-        </figure>
-        <figure class="item">
-            <img class="morph" src="{{ url_for('static', filename='tobey.jpg')}}">
-            <figcaption class="caption" style="color:antiquewhite;">Tobey Maguire(Peter Parker)</figcaption>
-        </figure>
+
+        <!--<p id="carou" class="beschriftung"><i><strong>Popular actors:</strong> <br> Benedict Wond(Master Lin)
+                            ,<br> Benjamin Wadsworth(Marcus Lopez)
+                            ,<br> Lana Condor(Saya Kuroki)
+                            ,<br> María Gabriela de Faría(Maria Salazar)
+                            ,<br> Luke Tennie(Willie Lewis)</i></p>
+                    <p id="carou"><strong>Other Assessments:</strong><br>7,5/10 from IMDb</p>-->
+
     </div>
     <div id="div3" class="container2">
         <h2 style="color:antiquewhite">TV Shows</h2>
@@ -106,12 +98,6 @@
                             title="Dragon Ball Z/Super" style="width:960px; height:470px;"></a>
                 </dd>
                 <p><strong>Rating:</strong><br>8,8/10 from IMDb</p>
-
-                <dt>Deadly Class</dt>
-                <dd><a href="/deadly" class="beweg"><img src="{{ url_for('static', filename='deadly.gif') }}"
-                            title="Deadly Class" style="width:960px; height:470px;"></a>
-                </dd>
-                <p><strong>Rating:</strong><br>7,5/10 from IMDb</p>
             </dl>
         </div>
     </div>
@@ -124,7 +110,6 @@
                             title="Matrix" style="width:960px; height:470px;"></a>
                 </dd>
                 <p><strong>Rating:<br></strong>8,7/10 from IMDb</p>
-
 
                 <dt>Interstellar</dt>
                 <dd><a href="/interstellar" class="beweg"><img
@@ -166,6 +151,13 @@
                             style="width:960px; height:470px;"></a>
                 </dd>
                 <p><strong>Rating:</strong><br>8,4/10 from IMDb</p>
+
+                <dt>Spider-Man: No Way Home</dt>
+                <dd><a href="/noway" class="beweg">
+                        <img src="{{ url_for('static', filename='spider.gif') }}" title="Spider-Man: No Way Home"
+                            style="width:960px; height:470px;"></a>
+                </dd>
+                <p><strong>Rating:</strong><br>8,2/10 from IMDb</p>
             </dl>
         </div>
     </div>
