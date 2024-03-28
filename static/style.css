@@ -139,9 +139,6 @@ dt {
 #info {
     color:black;
     text-align: center;
-    position:absolute;
-    top:40px;
-    right:30px;
     font-size: 30px;
 }
 
@@ -186,9 +183,6 @@ dt {
 .infoo {
     color:antiquewhite;
     text-align: center;
-    position:absolute;
-    top:40px;
-    right:30px;
     font-size: 30px;
 }
 .carousel-inner{
@@ -212,6 +206,7 @@ dt {
 /*Sidebar*/
 body {
     overflow-x: hidden;
+    max-width: 100%;
 }
 
 #sidebar {
